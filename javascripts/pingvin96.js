@@ -6,7 +6,6 @@ $('body').on('click', '.cart.select_variant', function() {
 });
 
 $('body').on('click', '.cart:not(.select_variant)', function() {
-  alert(3);
   yaCounter27482889.reachGoal('Drop_In_Cart');
 });
 
