@@ -20,8 +20,8 @@ $('body').on('click', '.cart:not(.select_variant)', function() {
 
 $('.block_info .b_pr_tabs').before(
 '<div class="clear"></div>' +
-'<div class="form" style="padding: 0; margin: 0; padding-bottom: 10px;">' +
-  '<button class="js-ask-question"><span>Задать вопрос</span></button>' +
+'<div class="" style="padding: 0; margin: 0; padding-bottom: 10px;">' +
+  '<button class="js-ask-question mybtn mybtn-bblue"><span>Задать вопрос</span></button>' +
 '</div>'
 );
 
