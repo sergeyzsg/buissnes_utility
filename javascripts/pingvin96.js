@@ -16,8 +16,10 @@ $('.block_info .b_pr_tabs').before(
 '</div>'
 );
 
-$('.js-ask-question').click(function() {
-  window.assign('/feedback/');
+$('.js-ask-question').click(function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  window.location.assign('/feedback/');
 });
 
 // End
