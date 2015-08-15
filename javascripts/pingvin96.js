@@ -37,7 +37,7 @@ $('.block_info .b_pr_tabs').before(
   window.location.assign('/feedback/');
 }); */
 
-$('a[data-lh="widget-button"]').click(function() {
+$('body').on('click', 'a[data-lh="widget-button"]', function() {
   if (yaCounter27482889 && yaCounter27482889.reachGoal) {
     yaCounter27482889.reachGoal('lead_hacker');
     log('Lead Hacker Goal');
