@@ -6,6 +6,12 @@ v=h.styleSheets;return{css:function(b,a,c,d){m("css",b,a,c,d)},js:function(b,a,c
 LazyLoad.css('http://sergeyzsg.github.io/buissnes_utility/stylesheets/pingvin96.css', function () {
 });
 
+function log() {
+  if (console) {
+    cosole.log.apply(cosole, arguments);
+  }
+}
+
 ////
 $(function() {
 // Begin
@@ -21,14 +27,21 @@ $('body').on('click', '.cart:not(.select_variant)', function() {
 $('.block_info .b_pr_tabs').before(
 '<div class="clear"></div>' +
 '<div class="" style="padding: 0; margin: 0; padding-bottom: 10px;">' +
-  '<button class="js-ask-question mybtn mybtn-bblue"><span>Задать вопрос</span></button>' +
+  '<a class="js-ask-question mybtn mybtn-bblue feedback"><span>Задать вопрос</span></a>' +
 '</div>'
 );
 
-$('.js-ask-question').click(function(event) {
+/* $('.js-ask-question').click(function(event) {
   event.preventDefault();
   event.stopPropagation();
   window.location.assign('/feedback/');
+}); */
+
+$('a[data-lh="widget-button"]').click(function() {
+  if (yaCounter27482889 && yaCounter27482889.reachGoal) {
+    yaCounter27482889.reachGoal('lead_hacker');
+    log('Lead Hacker Goal');
+  }
 });
 
 // End
