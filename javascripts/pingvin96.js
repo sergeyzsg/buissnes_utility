@@ -8,7 +8,7 @@ LazyLoad.css('http://sergeyzsg.github.io/buissnes_utility/stylesheets/pingvin96.
 
 function log() {
   if (console) {
-    console.log.apply(cosole, arguments);
+    console.log.apply(console, arguments);
   }
 }
 
