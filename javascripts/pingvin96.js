@@ -31,17 +31,10 @@ $('.block_info .b_pr_tabs').before(
 '</div>'
 );
 
-/* $('.js-ask-question').click(function(event) {
+$('.js-ask-question').click(function(event) {
   event.preventDefault();
   event.stopPropagation();
-  window.location.assign('/feedback/');
-}); */
-
-$('body').on('click', 'a[data-lh="widget-button"]', function() {
-  if (yaCounter27482889 && yaCounter27482889.reachGoal) {
-    yaCounter27482889.reachGoal('lead_hacker');
-    log('Lead Hacker Goal');
-  }
+  $("a.feedback").first().click();
 });
 
 // End
