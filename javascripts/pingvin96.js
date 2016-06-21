@@ -37,7 +37,7 @@ $('.js-ask-question').click(function(event) {
   $("a.feedback").first().click();
 });
 
-var contestText = '<div class="wrapper_main_block" style="text-align: center; padding: 1em;"><span style="color: red">Внимание</span> конкурс! Получи каймано по оптовой цене!!! <a href="https://vk.com/caimano96?w=wall-77800706_332">Условия здесь. Жми!</a></div>';
+var contestText = '<div class="wrapper_main_block" style="text-align: center; padding: 1em;"><span style="color: red">Внимание</span> конкурс! Получи Каймано по оптовой цене!!! <a href="https://vk.com/caimano96?w=wall-77800706_332">Условия здесь. Жми!</a></div>';
 $('#header').after(contestText);
 
 // End
